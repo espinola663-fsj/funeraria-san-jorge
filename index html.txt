@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeraria San Jorge | Servicio 24h en Teruel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="logo">Funeraria San Jorge</div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#tanatorio">Tanatorio</a>
+            <a href="#esquelas">Esquelas</a>
+            <a href="#floristeria">Floristería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Acompañamos a las familias de Teruel con respeto y cercanía</h1>
+            <p>Servicio funerario 24 horas. Atención humana en los momentos más difíciles.</p>
+            <div class="hero-buttons">
+                <a class="btn-primary" href="tel:978000000">📞 Llamada 24h</a>
+                <a class="btn-secondary" href="#servicios">Nuestros servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section class="quienes">
+        <h2>Cercanía, profesionalidad y apoyo en cada paso</h2>
+        <p>En Funeraria San Jorge acompañamos a las familias de Teruel desde la empatía y el respeto. 
+        Nuestro equipo está disponible las 24 horas para ofrecer un servicio humano, transparente y adaptado a cada necesidad.</p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <h2>Servicios principales</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <h3>Traslados nacionales e internacionales</h3>
+                <p>Gestión completa y acompañamiento en todo el proceso.</p>
+            </div>
+            <div class="servicio">
+                <h3>Ceremonias religiosas y civiles</h3>
+                <p>Organización respetuosa y personalizada.</p>
+            </div>
+            <div class="servicio">
+                <h3>Cremación y gestión documental</h3>
+                <p>Trámites simplificados y apoyo administrativo.</p>
+            </div>
+        </div>
+        <a class="btn-secondary" href="#contacto">Ver todos los servicios</a>
+    </section>
+
+    <!-- TANATORIO -->
+    <section id="tanatorio" class="tanatorio">
+        <h2>Tanatorio San Jorge</h2>
+        <p>Un espacio tranquilo y acogedor para despedir a tus seres queridos. Salas amplias, climatizadas y preparadas para ofrecer intimidad y serenidad.</p>
+        <a class="btn-secondary" href="#contacto">Ver instalaciones</a>
+    </section>
+
+    <!-- ESQUELAS -->
+    <section id="esquelas" class="esquelas">
+        <h2>Esquelas recientes</h2>
+        <p>Consulta las esquelas publicadas y la información de cada servicio.</p>
+        <a class="btn-secondary" href="#contacto">Ver esquelas</a>
+    </section>
+
+    <!-- FLORISTERÍA -->
+    <section id="floristeria" class="floristeria">
+        <h2>Floristería</h2>
+        <p>Flores para expresar cariño y acompañamiento. Entrega rápida en tanatorio o domicilio.</p>
+        <a class="btn-secondary" href="#contacto">Ver catálogo</a>
+    </section>
+
+    <!-- TRÁMITES -->
+    <section class="tramites">
+        <h2>Trámites y gestiones</h2>
+        <p>Certificados, documentación, gestiones administrativas y asesoramiento personalizado para que no tengas que preocuparte por nada.</p>
+        <a class="btn-secondary" href="#contacto">Más información</a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Estamos aquí para ayudarte, 24 horas</h2>
+        <p class="telefono">📞 978 000 000</p>
+        <div class="hero-buttons">
+            <a class="btn-primary" href="tel:978000000">Llamar ahora</a>
+            <a class="btn-secondary" href="https://maps.google.com">Cómo llegar</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Funeraria San Jorge · Teruel</p>
+        <p>Dirección · Teléfono 24h · Aviso legal · Política de privacidad</p>
+    </footer>
+
+</body>
+</html>
