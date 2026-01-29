@@ -3,262 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funeraria San Jorge | Tanatorio en Teruel</title>
-    <meta name="description" content="Funeraria San Jorge en Teruel. Servicio funerario 24 horas, tanatorio moderno, traslados, ceremonias y atención cercana.">
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", sans-serif;
-            background: #f7f7f7;
-            color: #333;
-        }
+    <title>Funeraria San Jorge</title>
 
-        /* CABECERA SUPERIOR */
-        .topbar {
-            background: #0d1b2a;
-            color: #fff;
-            padding: 8px 0;
-            text-align: center;
-            font-size: 14px;
-        }
+    <!-- SEO -->
+    <meta name="description" content="Funeraria San Jorge en Teruel. Servicios funerarios, tanatorio, traslados, floristería y atención 24 horas. Profesionalidad, cercanía y respeto.">
+    <meta name="keywords" content="funeraria Teruel, tanatorio Teruel, servicios funerarios Teruel, San Jorge, funeraria San Jorge">
 
-        .topbar a {
-            color: #e0b973;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FuneralHome",
+      "name": "Funeraria San Jorge",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle San Jorge, Teruel",
+        "addressLocality": "Teruel",
+        "addressRegion": "Aragón",
+        "addressCountry": "España"
+      },
+      "telephone": "+34 600 000 000",
+      "url": "https://espinola663-fsj.github.io/funeraria-san-jorge/"
+    }
+    </script>
 
-        /* MENÚ */
-        header {
-            background: #ffffff;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #e5e5e5;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 22px;
-            color: #0d1b2a;
-            letter-spacing: 1px;
-        }
-
-        header h1 span {
-            color: #e0b973;
-        }
-
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #0d1b2a;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #e0b973;
-        }
-
-        /* HERO */
-        .hero {
-            background: url('https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
-            height: 420px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(13, 27, 42, 0.55);
-        }
-
-        .hero-text {
-            position: relative;
-            color: #fff;
-            text-align: center;
-            max-width: 700px;
-        }
-
-        .hero-text h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 60px 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        h2.section-title {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #0d1b2a;
-        }
-
-        p.section-subtitle {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto 40px;
-            color: #555;
-        }
-
-        /* SERVICIOS */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .service-box {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #e5e5e5;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-
-        .service-box h3 {
-            margin-top: 0;
-            color: #0d1b2a;
-        }
-
-        .service-box p {
-            color: #555;
-        }
-
-        /* CONTACTO */
-        .contact-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid #e5e5e5;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-
-        .contact-box strong {
-            color: #0d1b2a;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #0d1b2a;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #e0b973;
-            text-decoration: none;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .services {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                margin-top: 10px;
-            }
-
-            .services {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="topbar">
-        Atención 24h · <a href="tel:+34978622222">978 62 22 22</a> · info@funerariasanjorgeteruel.es
-    </div>
-
-    <header>
-        <h1>Funeraria <span>San Jorge</span></h1>
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#instalaciones">Instalaciones</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+    <header class="hero">
+        <img src="assets/tanatorio-san-jorge.jpg" alt="Tanatorio San Jorge en Teruel">
+        <div class="hero-text">
+            <h1>Funeraria San Jorge</h1>
+            <p>Atención cercana, profesional y humana en los momentos más difíciles</p>
+        </div>
     </header>
 
-    <div class="hero">
-        <div class="hero-text">
-            <h2>Acompañamiento cercano en momentos difíciles</h2>
-            <p>Servicio funerario profesional, respetuoso y disponible las 24 horas en Teruel.</p>
-        </div>
-    </div>
-
-    <section id="servicios">
-        <h2 class="section-title">Nuestros Servicios</h2>
-        <p class="section-subtitle">Atención integral y personalizada para cada familia.</p>
-
-        <div class="services">
-            <div class="service-box">
-                <h3>Servicio funerario completo</h3>
-                <p>Coordinación total del servicio: recogida, tanatorio, ceremonia y entierro o cremación.</p>
-            </div>
-
-            <div class="service-box">
-                <h3>Tanatorio y salas velatorio</h3>
-                <p>Instalaciones modernas, tranquilas y adaptadas para ofrecer intimidad y comodidad.</p>
-            </div>
-
-            <div class="service-box">
-                <h3>Gestión de trámites</h3>
-                <p>Nos encargamos de certificados, licencias, esquelas y documentación necesaria.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="instalaciones">
-        <h2 class="section-title">Instalaciones</h2>
-        <p class="section-subtitle">Un espacio pensado para el recogimiento y la serenidad.</p>
-
-        <div class="contact-box">
-            <p><strong>Salas velatorio amplias</strong>, climatizadas y con zonas de descanso.</p>
-            <p><strong>Capilla multiconfesional</strong> para ceremonias religiosas o civiles.</p>
-            <p><strong>Accesibilidad total</strong> y aparcamiento cercano.</p>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2 class="section-title">Contacto</h2>
-        <p class="section-subtitle">Estamos disponibles para usted las 24 horas.</p>
-
-        <div class="contact-box">
-            <p><strong>Teléfono 24h:</strong> 978 62 22 22</p>
-            <p><strong>Dirección:</strong> Calle Ejemplo, 12 · 44001 Teruel</p>
-            <p><strong>Email:</strong> info@funerariasanjorgeteruel.es</p>
-        </div>
+    <section class="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Atención 24 horas</li>
+            <li>Tanatorio propio</li>
+            <li>Traslados nacionales e internacionales</li>
+            <li>Floristería</li>
+            <li>Gestión documental</li>
+        </ul>
     </section>
 
     <footer>
-        © 2026 Funeraria San Jorge · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a>
+        <p>© 2026 Funeraria San Jorge · Teruel</p>
     </footer>
 
 </body>
