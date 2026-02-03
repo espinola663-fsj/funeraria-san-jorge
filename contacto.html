@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacte con Funeraria San Jorge en Teruel para atención 24 horas, asesoramiento y servicios funerarios completos.">
   <title>Contacto | Funeraria San Jorge</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,11 +33,36 @@
     <h1>Contacto</h1>
     <p>Estamos aquí para ayudarle en todo momento.</p>
 
-    <form style="display:flex;flex-direction:column;gap:12px;max-width:400px;">
-      <input type="text" placeholder="Nombre" style="padding:10px;">
-      <input type="text" placeholder="Teléfono" style="padding:10px;">
-      <input type="email" placeholder="Email" style="padding:10px;">
-      <textarea placeholder="Mensaje" style="padding:10px;height:120px;"></textarea>
+    <div class="contact-grid" style="margin: 24px 0;">
+      <div class="card contact-item">
+        <span class="contact-label">Dirección</span>
+        <strong>Calle San Jorge, Teruel</strong>
+        <span>Atención presencial en nuestras instalaciones.</span>
+      </div>
+      <div class="card contact-item">
+        <span class="contact-label">Teléfono 24h</span>
+        <strong><a href="tel:+34XXXXXXXXX">+34 XXX XXX XXX</a></strong>
+        <span>Disponibilidad inmediata.</span>
+      </div>
+      <div class="card contact-item">
+        <span class="contact-label">Correo</span>
+        <strong><a href="mailto:info@funerariasanjorge.com">info@funerariasanjorge.com</a></strong>
+        <span>Le respondemos lo antes posible.</span>
+      </div>
+    </div>
+
+    <form class="form-card" style="max-width: 520px;">
+      <label for="contact-name">Nombre</label>
+      <input id="contact-name" type="text" placeholder="Nombre y apellidos" autocomplete="name">
+
+      <label for="contact-phone">Teléfono</label>
+      <input id="contact-phone" type="tel" placeholder="+34 XXX XXX XXX" autocomplete="tel">
+
+      <label for="contact-email">Email</label>
+      <input id="contact-email" type="email" placeholder="correo@ejemplo.com" autocomplete="email">
+
+      <label for="contact-message">Mensaje</label>
+      <textarea id="contact-message" placeholder="Cuéntenos cómo podemos ayudarle." rows="5"></textarea>
       <button class="btn-urgent" type="submit">Enviar</button>
     </form>
   </div>
