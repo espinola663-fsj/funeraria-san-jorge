@@ -5,6 +5,7 @@
   --color-accent: #b89c6d;
   --color-text: #333;
   --color-light: #fff;
+  --color-border: #d9e0e6;
 }
 
 * {
@@ -23,6 +24,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 img {
@@ -65,9 +68,21 @@ nav ul {
   flex-wrap: wrap;
 }
 
+nav a {
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
 nav a.active {
   color: var(--color-accent);
   font-weight: 600;
+  border-color: var(--color-accent);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-urgent {
@@ -90,6 +105,20 @@ nav a.active {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+}
+
+.btn-urgent:hover,
+.btn-urgent:focus-visible {
+  background: #152c3a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(21, 44, 58, 0.2);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: rgba(31, 59, 77, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(31, 59, 77, 0.12);
 }
 
 section {
@@ -121,6 +150,11 @@ p {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .grid-3 {
@@ -160,6 +194,57 @@ p {
 
 .section-muted {
   background: #eef1f4;
+}
+
+.section-divider {
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.contact-item {
+  display: grid;
+  gap: 6px;
+}
+
+.contact-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+
+.form-card {
+  background: var(--color-light);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  display: grid;
+  gap: 14px;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font: inherit;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  outline: 2px solid rgba(31, 59, 77, 0.2);
+  border-color: var(--color-primary);
+}
+
+.form-card label {
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 footer {
